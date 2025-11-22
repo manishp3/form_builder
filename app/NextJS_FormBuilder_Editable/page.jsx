@@ -70,6 +70,8 @@ export default function Page() {
     return Object.keys(e).length === 0;
   }
 
+  console.log("test git");
+  
   function submitPreview(e) {
     e.preventDefault();
     if (validate()) {
