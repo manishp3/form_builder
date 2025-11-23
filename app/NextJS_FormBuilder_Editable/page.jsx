@@ -20,7 +20,7 @@ export default function Page() {
   useEffect(() => { if (typeof window !== 'undefined') localStorage.setItem('mini.form', JSON.stringify(form)); }, [form]);
   useEffect(() => { if (typeof window !== 'undefined') localStorage.setItem('mini.theme', JSON.stringify(theme)); }, [theme]);
 
-  console.log("log of window", window);
+  // console.log("log of window", window);
 
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
