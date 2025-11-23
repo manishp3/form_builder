@@ -3,10 +3,6 @@ import React, { useEffect, useState } from "react";
 import { DEFAULT_THEME, SAMPLE_FORM, uid } from "../(utils)";
 import FieldRenderer from "../Component/FieldRenderer";
 import FieldEditor from "../Component/FieldEditor";
-
-
-
-
 export default function Page() {
   const [mode, setMode] = useState('edit'); // for edit or preview
   const [form, setForm] = useState(() => {
@@ -71,7 +67,7 @@ export default function Page() {
   }
 
   console.log("test git");
-  
+
   function submitPreview(e) {
     e.preventDefault();
     if (validate()) {
